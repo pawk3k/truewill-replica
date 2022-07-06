@@ -1,6 +1,9 @@
 {
   "name": "eslint-config-custom",
   "version": "0.0.0",
+  "files": [
+    "eslintrc-frontend.js"
+  ],
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -10,5 +13,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@masterborn/eslint-config": "0.0.14",
+    "eslint-plugin-jest": "26.2.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-testing-library": "5.5.0"
   }
 }
