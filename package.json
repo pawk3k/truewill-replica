@@ -8,6 +8,7 @@
     "packages/ui"
   ],
   "scripts": {
+    "clean": "turbo run clean && rm -rf node_modules",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
