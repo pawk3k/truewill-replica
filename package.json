@@ -5,14 +5,15 @@
   "workspaces": [
     "apps/client",
     "apps/server",
-    "packages/"
+    "packages/*"
   ],
   "scripts": {
-    "clean": "turbo run clean && rm -rf node_modules",
     "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
     "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "storybook": "turbo run storybook --filter=ui"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
