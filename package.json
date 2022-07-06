@@ -5,7 +5,7 @@
   "workspaces": [
     "apps/client",
     "apps/server",
-    "packages/ui"
+    "packages/"
   ],
   "scripts": {
     "clean": "turbo run clean && rm -rf node_modules",
