@@ -1,0 +1,5 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "include": ["./src"],
+  "exclude": ["storybook", "node_modules"]
+}

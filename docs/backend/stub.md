@@ -1,0 +1,1 @@
+# ADR backend stub file
