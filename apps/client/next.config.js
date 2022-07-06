@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const withTM = require('next-transpile-modules')(['ui']);
+
+const nextConfig = withTM({
   eslint: {
     dirs: ['src'],
   },
-};
+  reactStrictMode: true,
+});
 
 module.exports = nextConfig;

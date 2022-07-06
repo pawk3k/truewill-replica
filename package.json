@@ -8,20 +8,21 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "turbo run clean && rm -rf node_modules",
     "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "lint": "turbo run lint",
+    "prepare": "husky install",
+    "storybook": "turbo run storybook --filter=ui"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
     "@commitlint/cli": "16.2.4",
     "@commitlint/config-conventional": "16.2.4",
+    "eslint-config-custom": "*",
     "husky": "8.0.0",
     "lint-staged": "12.3.5",
+    "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
