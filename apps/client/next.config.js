@@ -1,11 +1,15 @@
-/** @type {import('next').NextConfig} */
+const withPlugins = require('next-compose-plugins');
 const withTM = require('next-transpile-modules')(['ui']);
+const withSvgr = require('next-svgr');
 
-const nextConfig = withTM({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
   reactStrictMode: true,
-});
+};
 
-module.exports = nextConfig;
+const configWithPlugins = withPlugins([[withTM], [withSvgr]], nextConfig);
+
+module.exports = configWithPlugins;
