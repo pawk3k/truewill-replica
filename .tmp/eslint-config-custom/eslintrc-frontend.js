@@ -1,6 +1,15 @@
 module.exports = {
   extends: ['@masterborn/eslint-config/frontend/typescript', 'prettier'],
-  plugins: ['testing-library', 'jest', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'testing-library',
+    'jest',
+    'prettier',
+    'react',
+    'prettier',
+    'import',
+    '@typescript-eslint',
+  ],
   overrides: [
     {
       files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
@@ -17,5 +26,10 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     'import/prefer-default-export': 'off',
     'no-restricted-exports': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };
