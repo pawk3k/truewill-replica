@@ -1,6 +1,5 @@
 const withPlugins = require('next-compose-plugins');
 const withTM = require('next-transpile-modules')(['ui']);
-const withSvgr = require('next-svgr');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,8 +7,15 @@ const nextConfig = {
     dirs: ['src'],
   },
   reactStrictMode: true,
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
 };
 
-const configWithPlugins = withPlugins([[withTM], [withSvgr]], nextConfig);
-
-module.exports = configWithPlugins;
+module.exports = withPlugins([[withTM]], nextConfig);

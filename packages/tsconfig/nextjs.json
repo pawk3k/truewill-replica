@@ -6,5 +6,8 @@
     "jsx": "preserve",
     "noEmit": true,
     "target": "es5"
-  }
+  },
+  "files": [
+    "svgr.d.ts"
+  ]
 }
