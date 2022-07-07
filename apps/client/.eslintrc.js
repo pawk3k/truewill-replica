@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('eslint-config-custom/eslintrc-frontend.js'),
+  ...require('config/eslintrc-client.js'),
   extends: ['plugin:@next/next/core-web-vitals'],
   parserOptions: {
     project: 'tsconfig.json',

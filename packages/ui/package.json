@@ -9,10 +9,10 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
-    "vite": "^2.9.13",
-    "typescript": "4.7.4",
+    "config": "*",
     "tsconfig": "*",
-    "eslint-config-custom": "*"
+    "typescript": "4.7.4",
+    "vite": "^2.9.13"
   },
   "main": "./src/index.ts",
   "name": "ui",
