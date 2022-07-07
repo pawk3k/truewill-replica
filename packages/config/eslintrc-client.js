@@ -10,7 +10,7 @@ module.exports = {
     'plugin:import/typescript',
     'prettier',
   ],
-  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'prettier', 'react'],
   parser: '@typescript-eslint/parser',
   settings: {
     next: {
