@@ -1,7 +1,6 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
   },
   extends: [
     'next', // next specific
@@ -12,16 +11,13 @@ module.exports = {
     'prettier',
   ],
   plugins: ['@typescript-eslint', 'import', 'jsx-a11y', 'prettier'],
-  // parser: '@typescript-eslint/parser',
+  parser: '@typescript-eslint/parser',
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/'],
     },
     react: {
       version: 'detect',
-    },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       typescript: {
