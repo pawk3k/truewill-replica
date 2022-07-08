@@ -1,13 +1,14 @@
 {
   "author": "Truewill Frontend Team",
   "dependencies": {
-    "next-compose-plugins": "^2.2.1",
     "next": "12.2.1",
+    "next-compose-plugins": "^2.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ui": "*"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
