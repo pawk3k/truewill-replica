@@ -17,10 +17,10 @@
     "storybook": "turbo run storybook --filter=ui"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.4",
-    "@commitlint/config-conventional": "16.2.4",
-    "husky": "8.0.0",
-    "lint-staged": "12.3.5",
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
     "turbo": "latest"
   },
   "engines": {
