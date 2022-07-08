@@ -13,7 +13,7 @@
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
     "dev:server": "turbo run dev --filter=server",
-    "dev:client": "turbo run dev --filter=client",
+    "dev:client": "turbo run dev --filter=client --filter=ui",
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
