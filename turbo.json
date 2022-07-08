@@ -22,7 +22,7 @@
     },
     "server#build": {
       "dependsOn": ["^build"],
-      "outputs": ["build/**"]
+      "outputs": ["dist/**"]
     },
     "storybook": {
       "outputs": []
