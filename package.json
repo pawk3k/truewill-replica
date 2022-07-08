@@ -8,13 +8,17 @@
     "packages/*"
   ],
   "scripts": {
+    "build:client": "turbo run build --filter=client",
+    "build:server": "turbo run build --filter=server",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
+    "dev:server": "turbo run dev --filter=server",
+    "dev:client": "turbo run dev --filter=client",
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "prepare": "husky install",
-    "storybook": "turbo run storybook --filter=ui"
+    "sb": "turbo run storybook --filter=ui"
   },
   "devDependencies": {
     "@commitlint/cli": "17.0.3",

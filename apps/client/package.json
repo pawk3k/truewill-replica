@@ -24,7 +24,7 @@
       "prettier --write"
     ]
   },
-  "name": "truewill-client",
+  "name": "client",
   "private": true,
   "scripts": {
     "build": "next build",

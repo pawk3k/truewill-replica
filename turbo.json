@@ -9,11 +9,20 @@
     "clean": {
       "cache": false
     },
+    "client#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"]
+    },
     "dev": {
-      "cache": false
+      "cache": false,
+      "outputs": []
     },
     "lint": {
       "outputs": []
+    },
+    "server#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["build/**"]
     },
     "storybook": {
       "outputs": []
